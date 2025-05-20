@@ -19,7 +19,7 @@ public void OnPluginStart()
 {
 	g_Cookie = RegClientCookie("timeleft_hud_toggle", "Toggle timeleft HUD visibility", CookieAccess_Protected);
 	
-	RegConsoleCmd("sm_timeleft", Command_ToggleTimeleft, "Toggles the timeleft HUD on/off");
+	RegConsoleCmd("sm_tl", Command_ToggleTimeleft, "Toggles the timeleft HUD on/off");
 	
 	for (int i = 1; i <= MaxClients; i++)
 	{
